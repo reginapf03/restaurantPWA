@@ -140,8 +140,8 @@ main {
   border-radius : 3%;
 }
 
-.resto-item:hover {
-  opacity: 0.7;
+.resto-name:hover {
+  text-decoration: underline;
 }
 
 .resto-city {
@@ -182,7 +182,7 @@ main {
 
 /*
   detail resto
-  */
+*/
 
 .restaurant {
   margin: 0 auto;
