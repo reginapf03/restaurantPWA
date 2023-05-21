@@ -1,4 +1,4 @@
-import CONFIG from '../../globals/config';
+import CONFIG from "../../globals/config";
 
 const createRestaurantDetailTemplate = (restaurant) => `
 <h2 class="restaurant__name">${restaurant.name}</h2>
@@ -28,9 +28,9 @@ const createRestaurantDetailTemplate = (restaurant) => `
 const createRestaurantItemTemplate = (restaurant) => `
 <aricle class="resto-item">
         <h2 tabindex="0" class="resto-city">${restaurant.city}</h2>
-        <img tabindex="0" class="resto-img" src="${restaurant.pictureId}" alt="${restaurant.name}">
+        <img tabindex="0" class="resto-img" src="${CONFIG.API_BASE_IMAGE_URL + restaurant.pictureId}" alt="${restaurant.name}">
         <div class="resto-info">
-            <p tabindex="0" class="resto-rate"> <span>$⭐️{restaurant.rating}</span></p>
+            <p tabindex="0" class="resto-rate">⭐️ <span>${restaurant.rating}</span></p>
             <h1 tabindex="0" class="resto-name">${restaurant.name}</h1>
             <p tabindex="0" class="resto-desc">${restaurant.description}</p>
         </div>
