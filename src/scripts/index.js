@@ -1,4 +1,4 @@
-import 'regenerator-runtime'; /* for async await transpile */
+import 'regenerator-runtime'; 
 import '../styles/main.css';
 import '../styles/responsive.css';
 import App from './view/app';
@@ -10,6 +10,10 @@ const app = new App({
 });
 
 window.addEventListener('hashchange', () => {
+  app.renderPage();
+});
+
+window.addEventListener('load', () => {
   app.renderPage();
 });
 
