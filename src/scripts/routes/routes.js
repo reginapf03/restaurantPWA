@@ -1,6 +1,6 @@
-import Resto from '../views/pages/resto';
-import Detail from '../views/pages/detail';
-import Favorite from '../views/pages/favorite';
+import Resto from '../view/pages/resto';
+import Detail from '../view/pages/detail';
+import Favorite from '../view/pages/favorite';
 
 const routes = {
   '/': Resto, // default page
