@@ -1,4 +1,7 @@
 import DrawerInitiator from '../utils/drawer-initiator';
+import UrlParser from '../routes/url-parser';
+import routes from '../routes/routes';
+
  
 class App {
   constructor({ button, drawer, content }) {
@@ -7,6 +10,7 @@ class App {
     this._content = content;
  
     this._initialAppShell();
+    this.renderPage();
   }
  
   _initialAppShell() {
